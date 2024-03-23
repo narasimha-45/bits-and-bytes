@@ -1,0 +1,114 @@
+/* Left half containing the website name */
+.left-half {
+  width: 50%;
+  height: 100vh;
+  position: fixed; /* Fix the position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #007bff, #00bfff);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  z-index: 1; /* Ensure the left half remains on top */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Right half containing the registration form */
+.right-half {
+  width: 50%;
+  margin-left: 50%; /* Adjust the margin to push the right half to the right */
+  padding: 20px 40px; /* Adjusted padding */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Container for the entire page */
+.registration-page {
+  display: flex;
+  height: 100%;
+}
+
+.website-name {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Right half containing the registration form */
+.right-half {
+  width: 50%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px 40px; /* Adjusted padding */
+}
+
+/* Registration Form Styles */
+.registration-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 0; /* Adjusted padding */
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.registration-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.registration-container label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="password"],
+.registration-container input[type="number"],
+.registration-container input[type="tel"],
+.registration-container select {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.registration-container button[type="submit"] {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.registration-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Links Styles */
+.already-registered {
+  margin-top: 10px;
+}
+
+.already-registered span {
+  margin-right: 5px;
+}
+
+.already-registered a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.already-registered a:hover {
+  text-decoration: underline;
+}
